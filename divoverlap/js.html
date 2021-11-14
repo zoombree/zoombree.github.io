@@ -1,0 +1,141 @@
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KK7X4WX"></script>
+<script>
+    var dataLayer = [{
+        'contentGroupCORP': 'int'
+    }];
+</script>
+<script type="text/javascript">
+    window.getTartCookiesValue = function() {
+        var nameEQ = "tarteaucitron=",
+            ca = document.cookie.split(';'),
+            i, c, cookieSettings = '';
+        for (i = 0; i < ca.length; i += 1) {
+            c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1, c.length);
+            }
+            if (c.indexOf(nameEQ) === 0) {
+                cookieSettings = c.substring(nameEQ.length, c.length); //.replace('=',':');
+            }
+        }
+        return cookieSettings;
+    }
+    window.updateDataLayer = function(update) {
+        var cookieSettings = window.getTartCookiesValue();
+        // if dataLayer exist, we use its content
+        var dataLayer = window.dataLayer || [];
+        // go through cookie setting
+        if (cookieSettings != '') {
+            const allCookies = cookieSettings.split("!");
+            for (i = 0; i < allCookies.length; i += 1) {
+                var currentCookie = allCookies[i].split("=");
+                // Skip invalid pair
+                if (currentCookie == '') continue;
+                // Push in array
+                var newData = {};
+                name = currentCookie[0];
+                newData[name] = currentCookie[1] == 'true'; // Possible values: 'true', 'wait', and 'false'
+                // Updating means find the particular element and replace its value
+                if (update) {
+                    // Get the index of the object with key 'name' in the array
+                    var index = dataLayer.indexOf(dataLayer.filter(function(o) {
+                        return name in o;
+                    })[0]);
+                    if (index >= 0)
+                        dataLayer.splice(index, 1);
+                }
+                // Or just push the data in the array
+                dataLayer.push(newData);
+            }
+        }
+        window.dataLayer = dataLayer;
+    }
+    window.updateDataLayer(false, false);
+    // Cookie Setting Ready event push
+    window.pushCookieSettingReadyEvent = function() {
+        var push = (window.localStorage.getItem('preferencecomplete') === '1' && window.localStorage.getItem('panelclosed') === '1');
+        if (push) {
+            window.localStorage.getItem('cookieupdate') === '1' ?
+                dataLayer.push({
+                    'event': 'cookie-settings-updated'
+                }) :
+                dataLayer.push({
+                    'event': 'cookie-setting-ready'
+                });
+            window.localStorage.removeItem('preferencecomplete');
+            window.localStorage.removeItem('panelclosed');
+            window.localStorage.removeItem('cookieupdate');
+        }
+    }
+</script>
+<script>
+    var dataLayer = window.dataLayer || [];
+    // Get other data and push to dataLayer
+    var dataWebsite = {
+        "pageCategory": "Our Company",
+        "companyCategory": "Careers",
+        "websiteCountry": "Middle East",
+
+        //changing this value for the division and subdivision
+
+        "language": "en",
+        "codeStatus": "200",
+        "pageTemplate": "Shared Career Page"
+    };
+    // Update or push
+    var index = dataLayer.indexOf(dataLayer.filter(function(o) {
+        return "language" in o;
+    })[0]);
+    if (index >= 0)
+        dataLayer[index] = dataWebsite;
+    else {
+        dataLayer.push(dataWebsite);
+    }
+    window.dataLayer = dataLayer;
+</script>
+<script>
+    function PushToDataLayer(dataWebsite) {
+        var dataLayer = window.dataLayer || [];
+        dataLayer.push(dataWebsite);
+        window.dataLayer = dataLayer;
+    }
+</script>
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KK7X4WX');
+</script>
+<script type="text/javascript">
+    tarteaucitron.init({
+        "hashtag": "#settings",
+        /* Automatically open the panel with the hashtag */
+        "highPrivacy": true,
+        /* disabling the auto consent feature on navigation? */
+        "orientation": "bottom",
+        /* the big banner should be on 'top' or 'bottom'? */
+        "adblocker": false,
+        /* Display a message if an adblocker is detected */
+        "showAlertSmall": false,
+        /* show the small banner on bottom right? */
+        "cookieslist": true,
+        /* Display the list of cookies installed ? */
+        "removeCredit": true,
+        /* remove the credit link? */
+        "customCssFile": "cookie-bar-2019.css?v=20.1.03",
+        /* Custom CSS file the module will use */
+        "displayType": "modal",
+        /* Cookie display type: modal or bar */
+        "disableDefaultCss": false,
+        "inputBlocker": 'cookieLoader'
+    });
+</script>

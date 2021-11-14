@@ -11327,7 +11327,8 @@ header.masthead .h1 {
 }
 
 .map-process_container {
-    /* border: 2px solid black; */
+    /* border: 1px solid black; */
+    /* padding-top: 5%; */
     /* z-index: -10; */
     display: grid;
     width: 100%;
@@ -11349,7 +11350,7 @@ header.masthead .h1 {
     grid-area: overlap;
     /* align-self: center; */
     /* justify-self: center; */
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .map_div {
@@ -11382,4 +11383,126 @@ header.masthead .h1 {
     position: relative;
     bottom: 150px;
     left: 150px;
+}
+
+
+/*services slider style*/
+
+.pull-left {
+    float: left
+}
+
+.full-width {
+    width: 80%
+}
+
+
+/* .full-width-plus-70 {
+    width: calc(100% + 70px)
+} */
+
+.full-width-mobile {
+    width: 100%
+}
+
+.img-container {
+    width: 280%;
+    display: flex;
+    justify-content: baseline;
+    background-color: #fff;
+}
+
+.transform-img {
+    animation: transformX 44s linear 2s infinite
+}
+
+.content-center {
+    margin: 0 auto
+}
+
+.height-120 {
+    height: 120px
+}
+
+@keyframes transformX {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-66%)
+    }
+}
+
+.center-90 {
+    width: 90%;
+    margin-left: auto!important;
+    margin-right: auto!important
+}
+
+.client-logo-image {
+    height: auto;
+    width: 130px;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+
+/* .m-t-20 {
+    margin-top: 20px
+} */
+
+.main_title p {
+    font-family: 'poppins', sans-serif
+}
+
+.main-container {
+    width: 80%;
+    min-width: 900px;
+    overflow: hidden;
+    margin-top: 0
+}
+
+.main-container {
+    width: 100%
+}
+
+.center-90 {
+    width: 90%;
+    margin-left: auto!important;
+    margin-right: auto!important
+}
+
+.p-t-70 {
+    padding-top: 70px
+}
+
+.not-mobile-img {
+    display: block
+}
+
+
+/* .row {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    display: block
+} */
+
+.scroll-to-top-div {
+    cursor: pointer;
+    background: #b74a2c;
+    border-radius: 50%;
+    padding: 8px 8px;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 15px;
+    left: 15px;
+    box-shadow: 0 0 15px 10px rgb(31 45 61 / 5%);
+    text-align: center;
+    z-index: 99999
+}
+
+.fa-arrow-up:before {
+    content: "\f062";
 }

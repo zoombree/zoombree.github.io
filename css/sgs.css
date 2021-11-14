@@ -12858,7 +12858,7 @@ blockquote .blockquote__person__title {
 }
 
 .careers-working-together .list-careers-key-numbers {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #e4e4e4;
     padding: 3em 0 0;
     margin-top: 3em
 }
@@ -13145,7 +13145,7 @@ blockquote .blockquote__person__title {
         border-top: 1px solid #ccc;
         /*process steps horizental line color*/
         margin: 9.375rem 3.125rem 0;
-        padding-bottom: 31.25rem
+        padding-bottom: 20.25rem
     }
     /*process start & end */
     .careers-process-steps .list-hiring-process-steps:before {
@@ -13156,7 +13156,8 @@ blockquote .blockquote__person__title {
         position: absolute;
         top: -7px;
         left: -13px;
-        background: hsla(0, 0%, 100%, .5);
+        background: #d8d7d7;
+        /*hsla(0, 0%, 100%, .5)*/
         border-radius: 50%
     }
     .careers-process-steps .list-hiring-process-steps:after {
@@ -13168,7 +13169,8 @@ blockquote .blockquote__person__title {
         top: -13px;
         right: -27px;
         color: #ca4300;
-        background: hsla(0, 0%, 100%, .5);
+        background: #d8d7d7;
+        /*hsla(0, 0%, 100%, .5)*/
         border-radius: 50%;
         text-align: center;
         font-size: 1px;

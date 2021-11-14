@@ -21,6 +21,9 @@
     <!-- added theme styles/icon for services/footer's sections-->
     <link rel="stylesheet" id="top-slider-footer-css" href="/css/base.css" type="text/css" media="all" />
     <link rel="stylesheet" id="head-map-css" href="/css/sgs.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="head-map-css" href="/css/font-awesome.min.css" type="text/css" media="all" />
+    <!-- <link rel="stylesheet" id="head-map-css" href="/css/style.min.css" type="text/css" media="all" /> -->
+    <!-- <link rel="stylesheet" id="head-map-css" href="/css/sgs.min.css" type="text/css" media="all" /> -->
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -28,6 +31,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- added js files-->
+
+    <script type="text/javascript" src="/js/tarteaucitron.js"></script>
+    <script type="text/javascript" src="/js/tarteaucitron.services.js"></script>
+    <script type="text/javascript" src="/js/sgs.js"></script>
+    <script type="text/javascript" src="/js/sgs.min.js"></script>
+    <script type="text/javascript" src="/js/widgets.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -37,6 +48,10 @@
 </head>
 
 <body id="page-top">
+    <!--up-->
+    <div class="scroll-to-top-div" id="scroll-to-top" ng-click="gotoTop()" role="button" tabindex="0">
+        <i class="fa fa-arrow-up text-white" aria-hidden="true"></i>
+    </div>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -108,8 +123,8 @@
     </section>
     <!-- -->
     <!-- -->
-    <!-- Orders Types-->
-    <section id="orders">
+    <!-- Orders/services Types-->
+    <!-- <section id="orders">
         <div class="page-section" style="padding-top: 25px; background-color: rgba(255, 255, 255, 0.98)">
             <div class="section_wrapper mcb-section-inner">
                 <div class="wrap mcb-wrap mcb-wrap-b56fbe859 one valign-top clearfix" style="padding: 3% 7% 0% 7%">
@@ -193,7 +208,50 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <div id="slider" style="background-color: #fff;">
+        <div class="center-90">
+            <div class="row justify-content-center">
+                <div class="pull-left full-width text-center">
+                    <!-- <div class="bc-emphasized center bc-emphasized-xl" style="margin-bottom: 3%;margin-top: 3%;">
+                        <h2 id="client-header">Our Services</h2>
+                    </div> -->
+                    <div class=" main-container content-center">
+                        <div class="img-container transform-img">
+                            <div class="w-10 image-div height-120">
+                                <img src="assets/bulk.png" class="client-logo-image m-t-5" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="assets/global.png" class="client-logo-image" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="assets/mix.png" class="client-logo-image m-t-25" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="assets/online.png" class="client-logo-image m-t-25 w-80" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="assets/retail.png" class="client-logo-image m-t-25" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/mku.png" class="client-logo-image m-t-5" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/easy_pay.png" class="client-logo-image" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/mahindra_logistics.png" class="client-logo-image m-t-25" alt="">
+                            </div>
+                            <div class="w-10 image-div height-120">
+                                <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/oakridge.png" class="client-logo-image m-t-25 w-80" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- -->
     <!-- -->
     <!-- Services-->
@@ -236,138 +294,136 @@
                         <div class="map map_div">
                             <img src="/assets/map.png">
                         </div>
-                    </div>
-                    <!-- -->
-                    <!-- -->
-                    <!-- achivement/keys-->
-                    <div class="section careers-working-together center">
+                        <!-- -->
+                        <!-- -->
+                        <!-- achivement/keys-->
+                        <div class="section careers-working-together center">
+                            <!-- World Clock Times-->
+                            <div class="list-world-clocks">
+                                <ul>
+                                    <li class="clock-pst">
+                                        <svg title="Local time: 01:46" data-timestamp="1491868003" class="svg-clock dark" viewBox="0 0 36 36">
+                                            <g class="hands">
+                                                <polygon transform="rotate(276 18 18)" class="min"
+                                                    points="17,18 18,19 19,18 18,3"></polygon>
+                                                <polygon transform="rotate(53 18 18)" class="hour"
+                                                    points="17,18 18,19 19,18 18,9"></polygon>
+                                            </g>
+                                        </svg>
+                                        <div class="list-timezone-cities">
+                                            <ul>
+                                                <li>Vancouver</li>
+                                                <li>San Francisco</li>
+                                                <li>Los Angeles</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="clock-est">
+                                        <svg title="Local time: 04:46" data-timestamp="1491878803" class="svg-clock dark" viewBox="0 0 36 36">
+                                            <g class="hands">
+                                                <polygon transform="rotate(276 18 18)" class="min"
+                                                    points="17,18 18,19 19,18 18,3"></polygon>
+                                                <polygon transform="rotate(143 18 18)" class="hour"
+                                                    points="17,18 18,19 19,18 18,9"></polygon>
+                                            </g>
+                                        </svg>
+                                        <div class="list-timezone-cities">
+                                            <ul>
+                                                <li>New York</li>
+                                                <li>Miami</li>
+                                                <li>Asuncion</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="clock-cest">
+                                        <svg title="Local time: 09:46" data-timestamp="1491896803" class="svg-clock " viewBox="0 0 36 36">
+                                            <g class="hands">
+                                                <polygon transform="rotate(276 18 18)" class="min"
+                                                    points="17,18 18,19 19,18 18,3"></polygon>
+                                                <polygon transform="rotate(293 18 18)" class="hour"
+                                                    points="17,18 18,19 19,18 18,9"></polygon>
+                                            </g>
+                                        </svg>
+                                        <div class="list-timezone-cities">
+                                            <ul>
+                                                <li>Amsterdam</li>
+                                                <li>Capetown</li>
+                                                <li>Geneva</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="clock-msk">
+                                        <svg title="Local time: 11:46" data-timestamp="1491904003" class="svg-clock " viewBox="0 0 36 36">
+                                            <g class="hands">
+                                                <polygon transform="rotate(276 18 18)" class="min"
+                                                    points="17,18 18,19 19,18 18,3"></polygon>
+                                                <polygon transform="rotate(353 18 18)" class="hour"
+                                                    points="17,18 18,19 19,18 18,9"></polygon>
+                                            </g>
+                                        </svg>
+                                        <div class="list-timezone-cities">
+                                            <ul>
+                                                <li>Moscow</li>
+                                                <li>Dar Es Salaam</li>
+                                                <li>Dubai</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="clock-cst">
+                                        <svg title="Local time: 16:46" data-timestamp="1620406249" class="svg-clock " viewBox="0 0 36 36">
+                                            <g class="hands">
+                                                <polygon transform="rotate(276 18 18)" class="min"
+                                                    points="17,18 18,19 19,18 18,3"></polygon>
+                                                <polygon transform="rotate(143 18 18)" class="hour"
+                                                    points="17,18 18,19 19,18 18,9"></polygon>
+                                            </g>
+                                        </svg>
+                                        <div class="list-timezone-cities">
+                                            <ul>
+                                                <li>Hong Kong</li>
+                                                <li>Beijing</li>
+                                                <li>Singapore</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="clock-jst">
+                                        <svg title="Local time: 17:46" data-timestamp="1491925603" class="svg-clock " viewBox="0 0 36 36">
+                                            <g class="hands">
+                                                <polygon transform="rotate(276 18 18)" class="min"
+                                                    points="17,18 18,19 19,18 18,3"></polygon>
+                                                <polygon transform="rotate(173 18 18)" class="hour"
+                                                    points="17,18 18,19 19,18 18,9"></polygon>
+                                            </g>
+                                        </svg>
+                                        <div class="list-timezone-cities">
+                                            <ul>
+                                                <li>Tokyo</li>
+                                                <li>Seoul</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!---->
+                            <!---->
+                            <!-- achivments in figures-->
+                            <div class="list-careers-key-numbers">
+                                <ul>
 
-                        <!-- World Clock Times-->
-                        <div class="list-world-clocks">
-                            <ul>
-                                <li class="clock-pst">
-                                    <svg title="Local time: 01:46" data-timestamp="1491868003" class="svg-clock dark" viewBox="0 0 36 36">
-                                        <g class="hands">
-                                            <polygon transform="rotate(276 18 18)" class="min"
-                                                points="17,18 18,19 19,18 18,3"></polygon>
-                                            <polygon transform="rotate(53 18 18)" class="hour"
-                                                points="17,18 18,19 19,18 18,9"></polygon>
-                                        </g>
-                                    </svg>
-                                    <div class="list-timezone-cities">
-                                        <ul>
-                                            <li>Vancouver</li>
-                                            <li>San Francisco</li>
-                                            <li>Los Angeles</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="clock-est">
-                                    <svg title="Local time: 04:46" data-timestamp="1491878803" class="svg-clock dark" viewBox="0 0 36 36">
-                                        <g class="hands">
-                                            <polygon transform="rotate(276 18 18)" class="min"
-                                                points="17,18 18,19 19,18 18,3"></polygon>
-                                            <polygon transform="rotate(143 18 18)" class="hour"
-                                                points="17,18 18,19 19,18 18,9"></polygon>
-                                        </g>
-                                    </svg>
-                                    <div class="list-timezone-cities">
-                                        <ul>
-                                            <li>New York</li>
-                                            <li>Miami</li>
-                                            <li>Asuncion</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="clock-cest">
-                                    <svg title="Local time: 09:46" data-timestamp="1491896803" class="svg-clock " viewBox="0 0 36 36">
-                                        <g class="hands">
-                                            <polygon transform="rotate(276 18 18)" class="min"
-                                                points="17,18 18,19 19,18 18,3"></polygon>
-                                            <polygon transform="rotate(293 18 18)" class="hour"
-                                                points="17,18 18,19 19,18 18,9"></polygon>
-                                        </g>
-                                    </svg>
-                                    <div class="list-timezone-cities">
-                                        <ul>
-                                            <li>Amsterdam</li>
-                                            <li>Capetown</li>
-                                            <li>Geneva</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="clock-msk">
-                                    <svg title="Local time: 11:46" data-timestamp="1491904003" class="svg-clock " viewBox="0 0 36 36">
-                                        <g class="hands">
-                                            <polygon transform="rotate(276 18 18)" class="min"
-                                                points="17,18 18,19 19,18 18,3"></polygon>
-                                            <polygon transform="rotate(353 18 18)" class="hour"
-                                                points="17,18 18,19 19,18 18,9"></polygon>
-                                        </g>
-                                    </svg>
-                                    <div class="list-timezone-cities">
-                                        <ul>
-                                            <li>Moscow</li>
-                                            <li>Dar Es Salaam</li>
-                                            <li>Dubai</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="clock-cst">
-                                    <svg title="Local time: 16:46" data-timestamp="1620406249" class="svg-clock " viewBox="0 0 36 36">
-                                        <g class="hands">
-                                            <polygon transform="rotate(276 18 18)" class="min"
-                                                points="17,18 18,19 19,18 18,3"></polygon>
-                                            <polygon transform="rotate(143 18 18)" class="hour"
-                                                points="17,18 18,19 19,18 18,9"></polygon>
-                                        </g>
-                                    </svg>
-                                    <div class="list-timezone-cities">
-                                        <ul>
-                                            <li>Hong Kong</li>
-                                            <li>Beijing</li>
-                                            <li>Singapore</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="clock-jst">
-                                    <svg title="Local time: 17:46" data-timestamp="1491925603" class="svg-clock " viewBox="0 0 36 36">
-                                        <g class="hands">
-                                            <polygon transform="rotate(276 18 18)" class="min"
-                                                points="17,18 18,19 19,18 18,3"></polygon>
-                                            <polygon transform="rotate(173 18 18)" class="hour"
-                                                points="17,18 18,19 19,18 18,9"></polygon>
-                                        </g>
-                                    </svg>
-                                    <div class="list-timezone-cities">
-                                        <ul>
-                                            <li>Tokyo</li>
-                                            <li>Seoul</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!---->
-                        <!---->
-                        <!-- achivments in figures-->
-                        <div class="list-careers-key-numbers">
-                            <ul>
-                                <li>
-                                    <strong class="xl"><span class="number-countable">2,600</span></strong> Locations
-                                </li>
-                                <li>
-                                    <strong class="xl"><span class="number-countable">93,000</span></strong> Employees
-                                </li>
-                                <li>
-                                    <strong class="xl"><span class="number-countable">20</span><small
-                                            class="unit">+</small></strong> Sectors
-                                </li>
-                                <li>
-                                    <strong class="xl"><span class="number-countable">500</span><small
-                                            class="unit">+</small></strong> Open positions
-                                </li>
-                            </ul>
+                                    <li class="animation-ready-queue activate-animation" id="value"><strong class="xl"><span
+                                                class="number-countable activate-animation">2,600</span></strong> Locations
+                                    </li>
+                                    <li class="animation-ready-queue activate-animation"><strong class="xl"><span
+                                                class="number-countable activate-animation">93,000</span></strong> Employees
+                                    </li>
+                                    <li class="animation-ready-queue activate-animation"><strong class="xl"><span
+                                                class="number-countable activate-animation">20</span><small
+                                                class="unit">+</small></strong>&nbsp;Sectors</li>
+                                    <li class="animation-ready-queue activate-animation"><strong class="xl"><span
+                                                class="number-countable activate-animation">500</span><small
+                                                class="unit">+</small></strong> Open positions</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
