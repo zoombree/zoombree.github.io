@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Zoombree- main-repo</title>
+    <!-- <link rel="stylesheet" id="top-slider-footer-css" href="/css.css" type="text/css" media="all" /> -->
+    <!-- <script src="/js.js"></script> -->
+    <style>
+        .item1 {
+            background-color: yellow;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            grid-area: overlap;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .item2 {
+            background-color: black;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            grid-area: overlap;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "overlap";
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <div class="container">
+        <div class="item1"> Item1</div>
+        <div class="item2"> Item2</div>
+    </div>
+</body>
+
+</html>

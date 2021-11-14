@@ -11326,23 +11326,60 @@ header.masthead .h1 {
     opacity: 1;
 }
 
-.contdoc {
-    /* width: 200px;
+.map-process_container {
+    /* border: 2px solid black; */
+    /* z-index: -10; */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+}
+
+.process_div {
+    /* background-color: #e4cac2; */
+    /* opacity: 4.0; */
+    /* border-radius: 50%;
+    width: 100px;
+    height: 100px; */
+    /* align-self: center; */
+    padding-right: 3%;
+    /* position: relative; */
+    /* z-index: 1; */
+    grid-area: overlap;
+    /* align-self: center; */
+    /* justify-self: center; */
+    margin-top: 5%;
+}
+
+.map_div {
+    /* background-color: yellow; */
+    /* opacity: .5; */
+    /* border-radius: 50%;
+    width: 200px;
     height: 200px; */
+    /* position: relative; */
+    /* z-index: 2; */
+    grid-area: overlap;
+    align-self: center;
+    justify-self: center
+}
+
+.imageDiv {
+    margin-left: 100px;
+    background: #fff;
+    display: block;
+    width: 345px;
+    height: 220px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.bottomDiv {
     position: relative;
-    /* margin: 20px; */
-}
-
-.boxxx {
-    /* width: 100%;
-    height: 100%;             */
-    position: absolute;
-    /* top: 0; */
-    /* left: 0; */
-    /* opacity: 0.8;  for demo purpose  */
-}
-
-.stack-top {
-    z-index: 1;
-    /* margin: 20px; for demo purpose  */
+    bottom: 150px;
+    left: 150px;
 }
