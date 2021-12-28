@@ -18,7 +18,7 @@ email: info@zoombree.com
 phone: +201021224837
 description: Zoombree Teams working hard to finish the development of the site ASAP
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yjpl.github.io/soon/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://zoombree.github.io/soon/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: @zoombreeana
 github_username: zoombree
 
