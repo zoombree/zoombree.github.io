@@ -15,6 +15,9 @@ Soon is a single static page with a full-screen image, nothing more. Remember th
 
 ***
 
+---
 ## Get started
 
 [README](https://github.com/YJPL/soon/blob/master/README.md) Get [Soon](https://github.com/YJPL/soon/).
+---
+
