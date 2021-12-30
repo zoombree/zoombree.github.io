@@ -19,8 +19,8 @@ phone: 00201021224837
 description: A coming soon page for Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yjpl.github.io/soon/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: alternatyves
-github_username: YJPL
+twitter_username: zoombree
+github_username: zoombree
 
 # Build settings
 markdown: kramdown
